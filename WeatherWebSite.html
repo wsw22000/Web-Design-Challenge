@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Challenge</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="WeatherWebSite.html"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="WeatherWebSite.html">Weather Challenge <span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="TemperaturePage.html">Temp v Lat</a>
+            <a class="dropdown-item" href="CloudPage.html">Clouds v Lat</a>
+            <a class="dropdown-item" href="HumidityPage.html">Humidity v Lat</a>
+            <a class="dropdown-item" href="WindPage.html">Wind v Lat</a>
+          </div>
+          
+        <li class="nav-item">
+          <a class="nav-link" href="SummaryPage.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="DataPage.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bio.html">Author</a>
+        </li>
+    </div>
+
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Weather Challenge!</h1>
+      <p class="lead">The goal of this website is to showcase tasks completed in an API challenge as part of the data analytics bootcamp I completed at Northwestern University. In this activity, I created a Python script to visualize the weather of 500+ cities across the world of varying distances from the equator. To accomplish this, I utilized the Python library https://pypi.python.org/pypi/citipy and the OpenWeatherMap API https://openweathermap.org/api. </p>
+      <h1 class="lead">
+      <p>On this site you have the ability look at data by weather type and by hemisphere by navigating the Plots dropdown menu.</p>
+      <p>I hope you enjoy the available information!</p>
+      </h1>
+
+     
+      <h2 class="display-6">Global Results</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/city_lat_v_max_temp.png" alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption text-center">
+            <p></p>
+            <h4>Temp v Latitude</h4>
+            <p><a href="TemperaturePage.html" class="btn btn-primary" role="button">Hemisphere Data</a> <a href="#" ></a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/city_lat_v_cloud.png"alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption text-center">
+            <p></p>
+            <h4>Cloudiness v Latitude</h4>
+            <p><a href="CloudPage.html" class="btn btn-primary" role="button">Hemisphere Data</a> <a href="#" ></a></p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/city_lat_v_hum.png" alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption text-center">
+            <p></p>
+            <h4>Humidity v Latitude</h4>
+            <p><a href="HumidityPage.html" class="btn btn-primary" role="button">Hemisphere Data</a> <a href="#" ></a></p>
+          </div>
+        </div>
+          
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/city_lat_v_wind.png" alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption text-center">
+            <p></p>
+            <h4>Wind v Latitude</h4>
+            <p></p>
+            <h5><a href="WindPage.html" class="btn btn-primary" role="button">Hemisphere Data</a> <a href="#" ></a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>
